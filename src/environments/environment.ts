@@ -1,16 +1,6 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
+export const TOKEN = 'v^1.1#i^1#r^0#p^1#f^0#I^3#t^H4sIAAAAAAAAAOVYfWgURxTP5cuGGC1F1MYUzrWVtmH3Zvfu9vZW7+BOTXMlJrEXEw2KmdudS9bs7V53Z5McKsYU/KNYKK0fNGiN/bCK9OsP0RaDlAqVgkXFQlXEoP0UrbWUtv8UO7sX4yUVjeZqA71/lpl58+b3fu+9ee8G9JaWPbu5dvMfFa4phQO9oLfQ5WLLQVlpSfW0osLKkgKQI+Aa6H2yt7iv6MeFJkypafEFZKZ1zUTunpSqmaIzGaIsQxN1aCqmqMEUMkUsifHI0jqRY4CYNnSsS7pKuWOLQxQr+3mYCEheDiCfBBGZ1W7pbNJDFBKEpE+WfXxS4HxJn71umhaKaSaGGg5RHOAADXiaY5tYQfR7RX+A4YDQSrmbkWEqukZEGECFHbiis9fIwXp3qNA0kYGJEioci9TEGyKxxUvqmxZ6cnSFh3mIY4gtc/RokS4jdzNULXT3Y0xHWoxbkoRMk/KEsyeMVipGboF5APgO1QKUA4KP4wMIJIJBn5QXKmt0IwXx3XHYM4pMJx1REWlYwZl7MUrYSKxFEh4e1RMVscVu+7PMgqqSVJARopZEIysjjY1UOKKiHqjJiI7CTBQa7ZCOR1fQrCQgAQIg0bKXRXwQguGDstqGaR5z0iJdkxWbNNNdr+MoIqjRWG58OdwQoQatwYgksY0oR44DIxx6W22nZr1o4Q7N9itKESLczvDeHhjZjbGhJCyMRjSMXXAoClEwnVZkauyiE4vD4dNjhqgOjNOix9Pd3c10exndaPdwALCeFUvr4lIHSkGKyNq5npVX7r2BVhxTJJKmRF7EmTTB0kNilQDQ2qmw1xfg2FteGA0rPHb2HxM5NntGZ0TeMkTyQcgHuSDPeeVAMJiPDAkPB6nHxoESMEOnoNGJcFqFEqIlEmdWChmKLHr9Sc4rJBEt88Ek7Qsmk3TCL/M0m0QIIJRISEHh/5Qo4w31OJIMhPMS63mLc7V+eVTm2TSQ/R1xQepp6m5pAC/CurUCWxtB3UZAqIkZnpouqx6ExpsNdzZe0tOoUVcVKZMHBuxczyMLXkNuhAbORK0MGceRqpLPhMw1bXMnl6vt/SZRANMKY6c3I+kpjw7JvW5PrXEQu8cj5ElYGabdQiYmKGRSWse9SSH5wZBbQh7/luwdRAwY/xbSt8mWhB/oIOeyYwiTSnsHNu/rzJ5RpEwoeiLpdCyVsjBMqCiWn+r4H1XGO5qnkN5x/DbZuf4Q7CKezbpYkbONH+P4mTG7JMZApm4ZpOdlGuw+qEnvRBqpKtjQVRUZzeyEnT3JfHyfxffB7M5f5zeZYltSFRI+ayabZQ/FowqcaHdT3OfakWfLWX+QC/B+3huYkG2LHL82ZSZbVa/VTYzkf+GPimf0s0m4wPmxfa5B0Of6pNDlAgFAs9XgmdKi5cVFUymTFHfGJDGW0HsYBSYZUkI1iC0DMZ0ok4aKUVjqUs6dkf7MebAZWA1mjzzZlBWx5TnvN6Dq9koJO31WBSGG51hW8Hv9gVYw7/ZqMTuzeEb99qknr7Uc3/LX9er55vKjlz9/vw2BihEhl6ukgERXwYqTa94eeqLzh8ONZT7/sgNdj+5xtYX2rzodPPPcqZ+79JfOtzXRl+Z8IGw99tERuXzL0NBgS2fjzumrL5/Z/ul67cKxffTVLdd2nf89tunDna/ffPnja7O37t+74Hn31/4TXWX9kSOPd1bxRQNvzbn0zoJfqvlTc09btd+Dx/p/nbvvwNbt1Mz3tPMbb86acvjdqhtV8W+qE8f9p83mHYP8tNeGZtYY/JvrruxZWplsO9T2yIa2DVfXVq4MrY+WPfXKF+dqN1V655csGPzqQsuyi+XMwUPBVYWJA7tP/HZw20/9dd/uvsJEd16JXjza9+XZimncG66VZ2fsenrvdxsFcV3rZ6+umtt6I7Ctdt71DVk3/g2RYvEFShMAAA==';
 export const environment = {
-  production: false
+  production: false,
+  token: TOKEN
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
