@@ -17,18 +17,23 @@
 }
 
 .hero-cards {
-  display: flex;
-  justify-content: space-between;
-  // @include breakpoint(laptop){
-  //   flex-direction: column;
-  // }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  @include breakpoint(laptop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .cards {
   display: flex;
   justify-content: space-between;
+  padding: .5rem;
+  flex-wrap: wrap;
 
   @include breakpoint(laptop) {
+    flex-wrap: nowrap;
   }
 }
 
