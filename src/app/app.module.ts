@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './shared/components/search/search.component';
 import { CustomHttpInterceptor } from './custom-http-interceptor';
 
+//libraries
+import {CarouselModule} from 'primeng/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +23,7 @@ import { CustomHttpInterceptor } from './custom-http-interceptor';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CarouselModule,
     AppRoutingModule,
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: CustomHttpInterceptor, multi: true }],

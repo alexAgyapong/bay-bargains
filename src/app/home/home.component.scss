@@ -1,6 +1,6 @@
+@import "../../styles/mixins/breakpoint";
+
 .hero {
-  // width: 100vw;
-  // height: 30vh;
   min-height: 30vw;
   background: url("https://images.unsplash.com/photo-1574634534894-89d7576c8259?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60");
   background-position: center;
@@ -16,8 +16,56 @@
   height: 30%;
 }
 
-.card-row{
+.hero-cards {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  // @include breakpoint(laptop){
+  //   flex-direction: column;
+  // }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(laptop) {
+  }
+}
+
+.card-row-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-col-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-hero-img {
+  max-width: 12vw;
+  max-height: 20vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  @include breakpoint(laptop) {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "main side";
+  }
+}
+
+.main {
+  grid-area: main;
+}
+
+.side {
+  grid-area: side;
 }
