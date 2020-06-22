@@ -26,7 +26,7 @@ import {CarouselModule} from 'primeng/carousel';
     CarouselModule,
     AppRoutingModule,
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: CustomHttpInterceptor, multi: true }],
+  // providers: [{ provide: HTTP_INTERCEPTORS, useClass: CustomHttpInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

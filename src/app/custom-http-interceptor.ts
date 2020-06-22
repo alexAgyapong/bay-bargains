@@ -12,6 +12,11 @@ export class CustomHttpInterceptor implements HttpInterceptor {
       setHeaders: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${environment.token}`
+        // 'SECURITY-APPNAME': environment.appId,
+        // 'RESPONSE-DATA-FORMAT': 'NV',
+        // 'OPERATION-NAME': 'findItemsByKeywords',
+        // 'GLOBAL-ID': 'EBAY-US'
+      //  ' REST-PAYLOAD':'REST-PAYLOAD'
       }
     });
 
