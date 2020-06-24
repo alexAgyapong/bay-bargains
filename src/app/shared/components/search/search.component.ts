@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -10,7 +11,7 @@ export class SearchComponent implements OnInit {
 
   searchForm: FormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
     this.searchForm = this.fb.group({
@@ -20,6 +21,10 @@ export class SearchComponent implements OnInit {
   }
 
   search() {
-    console.log('search');
+    const searchTermControl = this.searchForm.get('searchTerm');
+    console.log('search', searchTermControl);
+    if (searchTermControl.value) {
+      this.router.navigate(['/items'], { queryParams: { searchTerm: searchTermControl.value } });
+    }
   }
 }

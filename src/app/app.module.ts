@@ -11,12 +11,14 @@ import { CustomHttpInterceptor } from './custom-http-interceptor';
 
 //libraries
 import {CarouselModule} from 'primeng/carousel';
+import { ItemListComponent } from './items/item-list/item-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent
+    SearchComponent,
+    ItemListComponent
   ],
   imports: [
     BrowserModule,

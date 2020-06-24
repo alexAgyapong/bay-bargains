@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
       query: 'drone',
       limit: 5
     } as RequestOption;
-    this.itemService.searchItem(request).subscribe();
+    // this.itemService.searchItem(request).subscribe();
     // this.findingService.searchProductByKeywords().subscribe();
   }
 
