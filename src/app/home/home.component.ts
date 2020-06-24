@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './../shared/services/data.service';
+import { ItemService } from '../shared/services/item.service';
 import { FindingService } from './../shared/services/finding.service';
+import { RequestOption } from '../shared/models/item';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,15 @@ import { FindingService } from './../shared/services/finding.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private dataService: DataService, private findingService: FindingService) { }
+  constructor(private itemService: ItemService, private findingService: FindingService) { }
 
   ngOnInit(): void {
-    this.dataService.getProducts().subscribe();
+    const request = {
+      query: 'drone',
+      limit: 5
+    } as RequestOption;
+    this.itemService.searchItem(request).subscribe();
+    // this.findingService.searchProductByKeywords().subscribe();
   }
 
 }
