@@ -23,7 +23,7 @@ export class FindingService {
     let url = 'http://svcs.ebay.com/services/search/FindingService/v1';
     url += '?OPERATION-NAME=findItemsByKeywords';
     url += '&SERVICE-VERSION=1.0.0';
-    url += '&SECURITY-APPNAME=Alexande-BayBarga-PRD-9c8ee5576-caca9a9b';
+    url += '&SECURITY-APPNAME=';
     url += '&GLOBAL-ID=EBAY-US';
     url += '&RESPONSE-DATA-FORMAT=JSON';
     url += '&callback=_cb_findItemsByKeywords';
