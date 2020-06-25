@@ -10,8 +10,9 @@ import { SearchComponent } from './shared/components/search/search.component';
 import { CustomHttpInterceptor } from './custom-http-interceptor';
 
 //libraries
-import {CarouselModule} from 'primeng/carousel';
+import { CarouselModule } from 'primeng/carousel';
 import { ItemListComponent } from './items/item-list/item-list.component';
+import { TokenInterceptor } from './token-interceptor';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,10 @@ import { ItemListComponent } from './items/item-list/item-list.component';
     CarouselModule,
     AppRoutingModule,
   ],
-  providers: [{ provide: HTTP_INTERCEPTORS, useClass: CustomHttpInterceptor, multi: true }],
+  providers: [
+    // { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: CustomHttpInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

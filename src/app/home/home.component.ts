@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ItemService } from '../shared/services/item.service';
 import { FindingService } from './../shared/services/finding.service';
 import { RequestOption } from '../shared/models/item';
+import { TokenService } from './../shared/services/token.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,9 @@ import { RequestOption } from '../shared/models/item';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private itemService: ItemService, private findingService: FindingService) { }
+  constructor(private itemService: ItemService,
+              private findingService: FindingService,
+              private tokenService: TokenService) { }
 
   ngOnInit(): void {
     const request = {
@@ -19,6 +22,7 @@ export class HomeComponent implements OnInit {
     } as RequestOption;
     // this.itemService.searchItem(request).subscribe();
     // this.findingService.searchProductByKeywords().subscribe();
+    // this.tokenService.getToken().subscribe();
   }
 
 }

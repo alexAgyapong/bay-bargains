@@ -16,7 +16,7 @@ export class ItemListComponent implements OnInit {
   ngOnInit(): void {
     // this.searchTerm = this.route.snapshot.queryParamMap.get('searchTerm');
     this.route.queryParamMap.subscribe(params => {
-      this.searchTerm = params.get('searchTerm')
+      this.searchTerm = params.get('searchTerm');
       console.log('search term in list', this.searchTerm);
       this.getSearchedItems();
     });
